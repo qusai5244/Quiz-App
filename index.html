@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<!-- First Page Structure   -->
+<div id="fisrtPage"> 
+    <div class="container">
+        <div >
+            <h1>Press play to start the quiz</h1>
+            <a onclick="startGame()" class="btn">Play</a>
+        </div>
+    </div>
+</div>
+
+
+ <!-- Quiz Page Structure  -->   
+<div id="questionsPage" class="container">
+        
+            <div id="quiz">
+                <div id="quiz-item">
+                    <p id="QuestionCounter" class="quiz-display">
+                        Question
+                    </p>
+                </div>
+                <div class="quiz-item">
+                    <p class="quiz-display">
+                        Time Left
+                    </p>
+
+                    <h1 class="quiz-timer" id="countDown">
+                        5:00
+                    </h1>
+
+                </div>
+
+        
+            </div>  
+            <h1 id="question"> What is the answer to this question ?</h1>
+
+            <div class="choice-container">
+            <p class="choice-display"><input  type="radio" name="choices" value="1"></p>
+            <button value="0" id="choice1" onClick="reply_click(this.value)" >Choice 1</button>
+            </div>
+
+            <div class="choice-container">
+            <p class="choice-display"><input  type="radio" name="choices" value="2"></p>
+            <button value="1" id="choice2" onClick="reply_click(this.value)" >Choice 2</button>
+            </div>
+
+            <div class="choice-container">
+            <p class="choice-display"><input type="radio" name="choices" value="3"></p>
+            <button value="2" id="choice3" onClick="reply_click(this.value)">Choice 3</button>
+            </div>
+
+            <div class="choice-container">
+            <p class="choice-display"><input type="radio" name="choices" value="4"></p>
+            <button value="3" id="choice4" onClick="reply_click(this.value)" >Choice 4</button>
+            </div>
+        
+        
+
+
+        <div class="buttons">
+
+            <div class="nav-Buttons">
+            <button id="previousButten" onclick="getPreQuestion()"> previesQuestion</button>
+            <button id="nextButton" onclick="getNextQuestion()"> NextQuestion</button>
+            <button id="submit" onclick="submit()"> Submit</button>
+            </div>
+
+            <div>
+                <div>
+                    <p class="questionNumberText">questions number</p>
+                </div>
+            <div class="questions-Buttons">
+            <button value="1"  onClick="questionNumber(this.value)"> 1</button>
+            <button value="2"  onClick="questionNumber(this.value)"> 2</button>
+            <button value="3"  onClick="questionNumber(this.value)"> 3</button>
+            <button value="4"  onClick="questionNumber(this.value)"> 4</button>
+            <button value="5"  onClick="questionNumber(this.value)"> 5</button>
+            <button value="6"  onClick="questionNumber(this.value)"> 6</button>
+            <button value="7"  onClick="questionNumber(this.value)"> 7</button>
+            <button value="8"  onClick="questionNumber(this.value)"> 8</button>
+            <button value="9"  onClick="questionNumber(this.value)"> 9</button>
+            <button value="10" onClick="questionNumber(this.value)"> 10</button>
+            <button value="11" onClick="questionNumber(this.value)"> 11</button>
+            <button value="12" onClick="questionNumber(this.value)"> 12</button>
+             </div>
+
+            </div>
+        </div>
+
+
+</div>
+    
+
+
+
+<!-- Score Page Structure  -->
+<div id="scorePage">
+        <div class="container">
+            <div>
+                <h1 class="score">0</h1>
+                <h2 id="scorePage-text"> Well done !</h2> 
+                <a href="index.html" class="btn"> Play Again</a>           
+            </div>
+        </div>
+</div>
+
+
+</body>
+<script src="game.js"></script>
+</html>
