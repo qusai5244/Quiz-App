@@ -16,26 +16,4 @@ There is two simple ways to open the quiz page
 3. copying the index file path and paste it on the browser
 
 
-# Roadmap
-1. building the main elements with html 
-2. style all elements and great a structure for the pages
-3. making functions with JavaScript and link everything to each other
 
-# Improvemt 
-the project can be upgraded to another level as well as there is some tools can be added such as docker file. Unfortinatly, my time for this project was limited as there is other university assisment that have the same deadline.
-
-# Contributing
-The code is available for everyone and i would be more than happy to adopt my code and develop it. 
-# Credits
-the quiz app is developed by Qusai Alnaabi
-
-# Acknowledgments
-some usefull sources that helped me building this project 
-- Youtube Videos
-- Stack Overflow Website
-- W3Schools Website
-
-# project Link
-Github : https://github.com/qusai5244/Quiz-App
-# Contact
-qalnaai00@gmail.com
